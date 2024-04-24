@@ -45,7 +45,7 @@ router.post('/todo', async (req, res) => {
   const todos = await Project.create(body);
   res.status(200).json({ message: 'Slot is added', todo: todos });
 });
-
+//..
 router.get('/listing', async (req, res) => {
   try {
     const projects = await Project.find();
